@@ -12,7 +12,8 @@ Ajax calls should have CORS enabled
 Data is in JSON format
 
 ### Data Structure
-```{
+```
+{
   qno: questionNumber
 }
 ```
