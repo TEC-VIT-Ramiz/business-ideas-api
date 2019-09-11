@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 app.use(cors())
 
 app.post('/', (req, res) => {
-    const ref = db.ref("question/question" + req.body.qno)
+    const ref = db.ref(req.body.company + "/question" + req.body.qno)
     ref.once("value", question => {
         
         if(!question.val()) {
